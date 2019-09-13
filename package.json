@@ -1,0 +1,14 @@
+{
+  "name": "buildingperformantwebapp",
+  "version": "1.0.0",
+  "description": "Demo pwa app",
+  "main": "index.html",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "start": "http-server -c-1 -p 8081 | open http://localhost:8081",
+    "test": "npm run test"
+  },
+  "author": "",
+  "license": "ISC"
+}
