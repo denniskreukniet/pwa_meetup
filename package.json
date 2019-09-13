@@ -4,11 +4,28 @@
   "description": "Demo pwa app",
   "main": "index.html",
   "dependencies": {},
-  "devDependencies": {},
+  "devDependencies": {
+    "copy-webpack-plugin": "^5.0.4",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.40.1",
+    "webpack-cli": "^3.3.8",
+    "workbox-webpack-plugin": "^4.3.1"
+  },
   "scripts": {
     "start": "http-server -c-1 -p 8081 | open http://localhost:8081",
-    "test": "npm run test"
+    "serve": "http-server dist -c0 -p 8081 | open http://localhost:8081",
+    "test": "npm run test",
+    "build": "webpack --env.mode production"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/denniskreukniet/pwa_meetup.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/denniskreukniet/pwa_meetup/issues"
+  },
+  "homepage": "https://github.com/denniskreukniet/pwa_meetup#readme"
 }
