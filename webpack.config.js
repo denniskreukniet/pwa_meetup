@@ -9,6 +9,7 @@ module.exports = env => {
 
     return {
         mode,
+        watch: true,
         entry: {
             main: "./src/index.js"
         },
