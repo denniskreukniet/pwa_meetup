@@ -13,9 +13,9 @@
   },
   "scripts": {
     "start": "http-server -c-1 -p 8081 | open http://localhost:8081",
-    "serve": "http-server dist -c0 -p 8081 | open http://localhost:8081",
+    "serve": "http-server dist -c-1 -p 8081 | open http://localhost:8081",
     "test": "npm run test",
-    "build": "webpack --env.mode production"
+    "build": "webpack --env.mode dev"
   },
   "author": "",
   "license": "ISC",

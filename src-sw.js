@@ -2,7 +2,7 @@ workbox.precaching.precacheAndRoute(self.__precacheManifest);
 
 workbox.routing.registerRoute(
     /https:\/\/pluralsight\-pwa\-scratch\.firebaseio\.com\/*\.json/,
-    new workbox.strategies.CacheFirst({
+    new workbox.strategies.NetworkFirst({
         cacheName: 'api-cache',
         plugins: [
             new workbox.expiration.Plugin({
